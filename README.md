@@ -3,6 +3,6 @@
 Here is the list of tools in ***The ToolBox***.
 
 - *PDFall*
-- *Image2Image
+- *Image2Image*
 - *CustomScreenshot*
 - *Word to PDF converter*
