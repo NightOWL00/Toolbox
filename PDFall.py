@@ -2,6 +2,7 @@ from PIL import Image
 import os
 
 if __name__ == '__main__':
+
     cwd = os.getcwd()               #For Getting Current Working Directory.
     l = os.listdir(cwd)             #Making List of FILES in corresponding Directory.
     img_list = []
