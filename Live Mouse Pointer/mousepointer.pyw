@@ -16,7 +16,7 @@ def Refresher():
 window = tk.Tk()
 window.iconbitmap('cursor.ico')
 window.geometry('205x35')
-# window.wm_attributes("-topmost", 1) so that windows stays at top
+window.wm_attributes("-topmost", 1) # so that windows stays at top
 window.title('MPOS')
 window.resizable(0, 0)
 lb1 = tk.Label(window, text='  ')
