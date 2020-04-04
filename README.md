@@ -1,8 +1,11 @@
 ![enter image description here](readme/logo.png)
-***COMING SOON***
+
 Here is the list of tools in ***The ToolBox***.
 
+- *basic calculator*
+- *CombinePDFs*
+- *fileOraganizer*
+- *Live Mouse Pointer*
+- *PDF2img*
 - *PDFall*
-- *Image2Image*
-- *CustomScreenshot*
-- *Word to PDF converter*
+- *ScreenShot2PDF*
