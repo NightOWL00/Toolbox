@@ -6,8 +6,7 @@ files=[]
 for i in os.listdir():
     if os.path.isfile(i)==True:
         files.append(i)
-    else:
-        pass
+
 # Removing main file name
 files.remove('File_organizer.py')
 
