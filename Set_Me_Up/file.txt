@@ -1,0 +1,10 @@
+Course Introduction
+SQL Statement Fundamentals
+GROUP BY Statements
+Assessment Test 1
+JOINS
+Advanced SQL Commands
+Assessment Test 2
+Creating Databases and Tables
+Assessment Test 3
+Conditional Expressions and Procedures

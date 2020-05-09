@@ -43,4 +43,3 @@ elif mode==2:
     print("Task completed successfully")
 else:
     print("Error: Wrong option provided")
-    
