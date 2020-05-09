@@ -2,7 +2,7 @@
 
 __Set-Me-Up__ is a Python Script for automating the creation of folders and multiple sub-folders through command line interface.
 
-## Pre-Requisite
+## Requirement
 
 Python is required to run the script.
 
