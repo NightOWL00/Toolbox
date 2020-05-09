@@ -13,15 +13,19 @@ This program helps you out in organizing your messed up **folder**, **desktop** 
   - For **windows** users :
   > pip install pytest-shutil
 
+## Installation and Usage
+
+No installation is needed just git clone the directory and open the [FileOrganizer.py](File_organizer.py "script") file.
+
 ## Screenshots
 
 > ### Before
 
-![Before](Readme/../Before.png "Before")
+![Before](File_Organizer_Readme/Before.png "Before")
 
 > ### After
 
-![After](Readme/../After.png "After")
+![After](File_Organizer_Readme/After.png "After")
 
 ## License
 
