@@ -16,7 +16,7 @@ Just git clone the directory and open the [mousepointer.pyw](mousepointer.pyw "s
 
 ## Screenshot
 
-![](Live_mouse_pointer_Readme/mouselocation.png "Mouse_pointer")
+![Mouse location](Live_Mouse_Pointer_Readme/mouselocation.png "Mouse_pointer")
 
 ## License
 
