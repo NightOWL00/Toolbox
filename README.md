@@ -6,7 +6,7 @@ Here is the list of tools in ***The ToolBox***.
 
 - *[CombinePDFs](CombinePDFs/ "script")*
 - *[FileOraganizer](FileOrganizer/ "script")*
-- *[Live_Mouse_Pointer]("Live Mouse Pointer"/ "script")*
+- *[Live Mouse Pointer]("LiveMousePointer"/ "script")*
 - *[PDFall](PDFall/ "script")*
 - *[ScreenShot2PDF](ScreenShot2PDF/ "script")*
 - *[Set_folders_for_me](set_folders_for_me/ "script")*
