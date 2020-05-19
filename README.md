@@ -9,5 +9,4 @@ Here is the list of tools in ***The ToolBox***.
 - *Live Mouse Pointer*
 - *PDFall*
 - *ScreenShot2PDF*
-- *Indexer*
 - *Set_folders_for_me*
