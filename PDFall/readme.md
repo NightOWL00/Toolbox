@@ -12,7 +12,7 @@ This simple script combines all the images in the directory in a PDF.
 
 ## Installation and Usage
 
-Just git clone the directory and open the [PDFall.py](PDFall.py "script") file.
+Just git clone the directory and open the [PDFall.py](PDFall.py "script") file and it will combine every image present in the directory into a single PDF.
 
 ## Screenshots
 

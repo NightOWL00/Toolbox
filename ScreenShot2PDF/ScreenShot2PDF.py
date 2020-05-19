@@ -38,8 +38,12 @@ storage_path = 'SS2PDF_folder'  # Change name from here
 if os.path.exists(storage_path) == False:
     os.mkdir(storage_path)
     print(info(f"path created : {storage_path}"))
-if storage_path[-1] != "/":
-    storage_path = storage_path+"/"
+else:
+    print("Please consider moving the files in the folder 'SS2PDF_folder' to a different location to prevent data from getting overwritten.")
+    input("Press ENTER to EXIT the program")
+
+
+storage_path = storage_path+"/"
 
 pages = int(input(que("Enter the no of screenshots to be taken: ")))
 dimentions = tuple(
@@ -64,6 +68,6 @@ for i in range(pages):
     mouse.click(Button.left, 1)
     im.save(storage_path + str(i) + '.png')
 
-print(good("Done with capturing screenshots."))
+print(good(lightgreen("Done with capturing screenshots.")))
 make_pdf_from_images(storage_path, pages)
 input(green(bold("Press ENTER to exit")))

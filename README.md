@@ -4,9 +4,9 @@
 
 Here is the list of tools in ***The ToolBox***.
 
-- *CombinePDFs*
-- *FileOraganizer*
-- *Live Mouse Pointer*
-- *PDFall*
-- *ScreenShot2PDF*
-- *Set_folders_for_me*
+- *[CombinePDFs](CombinePDFs\Readme.md "script")*
+- *[FileOraganizer](FileOrganizer\Readme.md "script")*
+- *[Live Mouse Pointer](Live Mouse Pointer\readme.md "script")*
+- *[PDFall](PDFall\readme.md "script")*
+- *[ScreenShot2PDF](ScreenShot2PDF\readme.md "script")*
+- *[Set_folders_for_me](set_folders_for_me\readme.md "script")*
