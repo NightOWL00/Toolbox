@@ -18,12 +18,12 @@ Just git clone the directory and open the [mousepointer.pyw](mousepointer.pyw "s
 
 > ### Before
 
-    ![](PDFall_Readme/all_images.png "Images")
+  ![](PDFall_Readme/all_images.png "Images")
 
 
 > ### After
 
-    ![](PDFall_Readme/combines_to_PDF.png "Combined PDF")
+  ![](PDFall_Readme/combines_to_PDF.png "Combined PDF")
 
 
 ## License
