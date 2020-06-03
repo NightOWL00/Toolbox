@@ -31,7 +31,7 @@ This app is made to make a rough structure of the webpage that the user is going
             Example: image big_gun.png 400 340
 6. Link - It uses the a tag of HTML. It is used to provide a link in the webpage. 
             Usage: link <url> <text-to-click-on>
-            Example: link https://www.w3schools.com/html/ They helped me</a>
+            Example: link https://www.w3schools.com/html/ They helped me
 7. exit - This command is used to exit the application.
             Usage: exit''')
 
@@ -130,12 +130,10 @@ while flag != "exit":
     if query[0].lower() == "exit":
         flag = "exit"
         break
-    query_2 = query[1].split(" ", 1)
-    os.system('cls')
     if query[0].lower() == "helpme":
         helpme()
-
-    elif query[0].lower() == "section":
+    query_2 = query[1].split(" ", 1)
+    if query[0].lower() == "section":
         mode = query_2[0]
         makeSectionTag(sectionid=''.join(query_2[1]), mode=mode)
 
@@ -167,6 +165,7 @@ while flag != "exit":
 
     else:
         print("Wrong input\nMaybe try typing helpme?")
+
 ending_now(mode)
 
 # Author: Prakhar Saxena
