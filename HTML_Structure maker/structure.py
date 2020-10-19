@@ -1,6 +1,13 @@
 import os
 import sys
 
+projectname = input("Enter project name:  ")
+if os.path.exists(projectname) == False:
+    os.mkdir(projectname)
+    os.mkdir(projectname+'/css')
+    os.mkdir(projectname+'/images')
+    os.mkdir(projectname+'/js')
+
 
 def helpme():
     print('''
@@ -32,8 +39,17 @@ This app is made to make a rough structure of the webpage that the user is going
 6. Link - It uses the a tag of HTML. It is used to provide a link in the webpage. 
             Usage: link <url> <text-to-click-on>
             Example: link https://www.w3schools.com/html/ They helped me
-7. exit - This command is used to exit the application.
-            Usage: exit''')
+7. List - It uses the lst tag of HTML and is used to make lists in the webpage. It has 3 modes of operation.
+            a. OL - 
+            b. UL -
+            c. DL -
+
+8. Br - it uses the br tag of html and is used to give line break.
+            Usage: br
+
+9. exit - This command is used to exit the application.
+            Usage: exit
+''')
 
 
 print("Sample text: \n\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quas odit sequi cupiditate dicta eveniet, aut possimus unde nemo fugiat.")
@@ -43,7 +59,7 @@ print("Sample text: \n\tLorem ipsum dolor sit amet, consectetur adipisicing elit
 
 #  This functions sets the upper half of the HTML document
 def starting_up(title_of_page):
-    with open("index.txt", 'w') as f:
+    with open(projectname+"/index.html", 'w') as f:
         f.write(
             f'<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>{title_of_page}</title>\n\t</head>\n<body>')
 
@@ -51,7 +67,7 @@ def starting_up(title_of_page):
 title_of_page = input("Enter the title of the page: ")
 starting_up(title_of_page)
 
-f = open("index.txt", 'a')
+f = open(projectname+"/index.html", 'a')
 
 #  This functions sets the lower half of the HTML document
 
@@ -63,11 +79,8 @@ def ending_now(mode=" "):
     elif mode == "outside":
         f.write("\n</body>\n</html>")
     f.close()
-    if os.path.exists("index.html") == False:
-        os.rename("index.txt", "index.html")
-    else:
-        filename = input("Give filename with extension: ")
-        os.rename("index.txt", filename)
+    # if os.path.exists(projectname+"/index.html") == False:
+    #     os.rename(projectname+"/index.html", projectname+"/index.html")
 
 
 # Section tag
@@ -124,25 +137,22 @@ commands = ["helpme", "section", "heading", "content",
 
 flag = ''
 mode = "outside"
+print(f"Commands are: {', '.join(commands)}")
 while flag != "exit":
-    print(f"Commands are: {', '.join(commands)}")
-    query = input("command:  ").split(" ", 1)
+    query = input("Query:  ").split(" ", 1)
     if query[0].lower() == "exit":
         flag = "exit"
-        break
-    if query[0].lower() == "helpme":
+    elif query[0].lower() == "helpme":
         helpme()
-    query_2 = query[1].split(" ", 1)
-    if query[0].lower() == "section":
+    elif query[0].lower() == "section":
+        query_2 = query[1].split(" ", 1)
         mode = query_2[0]
         makeSectionTag(sectionid=''.join(query_2[1]), mode=mode)
-
     elif query[0].lower() == "heading":
+        query_2 = query[1].split(" ", 1)
         makeHeadingTag(type=query_2[0], headingtext=''.join(query_2[1]))
-
     elif query[0].lower() == "content":
         makeContent(para=query[1])
-
     elif query[0].lower() == "table":
         rows = int(query[1])
         rowlist = []
@@ -155,16 +165,14 @@ while flag != "exit":
                 "Enter table rows(separate with commas):  ").split(",")
             rowlist.append(rowdata)
         makeTableTag(rows, rowlist)
-
     elif query[0].lower() == "image":
         query_3 = query[1].split(" ")
         makeImageTag(src=query_3[0], height=query_3[1], width=query_3[2])
-
     elif query[0].lower() == "link":
+        query_2 = query[1].split(" ", 1)
         makeLinkTag(src=query_2[0], linktext=query_2[1])
-
     else:
-        print("Wrong input\nMaybe try typing helpme?")
+        print("Wrong input\nMaybe try typing helpme.")
 
 ending_now(mode)
 
